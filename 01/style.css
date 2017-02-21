@@ -1,0 +1,54 @@
+body {
+    background: repeating-linear-gradient(45deg,
+    white,
+    white 10px,
+    lightgreen 11px,
+    lightgreen 12px);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    border: 2px solid forestgreen;
+    border-radius: 12px;
+    background-color: rgba(97, 203, 179, 0.8);
+}
+
+div {
+    margin: 20px;
+    min-height: 100px;
+    padding: 0;
+    border: 1px solid;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.header {
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    background: linear-gradient(darkorange,
+    orangered 70%);
+    margin: 0;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-width: 18px 14px 0 14px;
+    border-color: orangered transparent transparent transparent;
+    width: 0;
+    height: 0;
+    left: 10px;
+    bottom: -15px;
+}
+
+.text {
+    padding-top: 0;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
